@@ -15,7 +15,10 @@
                     <img src="bilder/logo-simple.png" alt="Hundesalon Zenetta Senske Logo">
                 </a>
             </div>
-            <ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="leistungen.html">Leistungen</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
@@ -34,8 +37,10 @@
 
     <main>
         <section class="hero">
-            <h1>Willkommen im Hundesalon Zenetta Senske</h1>
-            <p>Professionelle Pflege für Ihren treuen Begleiter</p>
+            <div class="hero-text-box">
+                <h1>Willkommen im Hundesalon Zenetta Senske</h1>
+                <p>Professionelle Pflege für Ihren treuen Begleiter</p>
+            </div>
             <div class="hero-images">
                 <div class="hero-image-container">
                     <img src="bilder/zanetta.jpg" alt="Zenetta Senske" class="hero-image">
@@ -55,50 +60,53 @@
         </section>
 
         <section class="contact-info">
-            <h2>Kontakt</h2>
-            <p>Inh. Zenetta Senske</p>
-            <p>Tel. 015901076038</p>
-            <p>Öffnungszeiten: Mo-Fr 9:00-18:00, Sa 9:00-14:00</p>
-            <a href="kontakt.html" class="contact-link">Mehr Informationen</a>
+            <div class="contact-box">
+                <h2>Kontakt</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-user"></i> Inh. Zenetta Senske</p>
+                    <p><i class="fas fa-phone"></i> Tel. 015901076038</p>
+                    <p><i class="fas fa-clock"></i> Öffnungszeiten: Mo-Fr 9:00-18:00, Sa 9:00-14:00</p>
+                </div>
+                <a href="kontakt.html" class="contact-link">Mehr Informationen</a>
+            </div>
         </section>
 
         <section class="gallery-preview">
-            <h2>Unsere Galerie</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="bilder/IMG-20240319-WA0000.jpg" alt="Hundepflege Beispiel">
-                    <div class="gallery-overlay">
-                        <p>Professionelle Fellpflege</p>
+            <div class="gallery-box">
+                <h2>Unsere Galerie</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="bilder/IMG-20240319-WA0000.jpg" alt="Hundepflege Beispiel">
+                        <div class="gallery-overlay">
+                            <p>Professionelle Fellpflege</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="bilder/IMG-20240319-WA0001.jpg" alt="Hundepflege Beispiel">
+                        <div class="gallery-overlay">
+                            <p>Vorher-Nachher Transformation</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="bilder/IMG-20240319-WA0002.jpg" alt="Hundepflege Beispiel">
+                        <div class="gallery-overlay">
+                            <p>Gepflegte Hundepfoten</p>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="bilder/IMG-20240319-WA0001.jpg" alt="Hundepflege Beispiel">
-                    <div class="gallery-overlay">
-                        <p>Vorher-Nachher Transformation</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="bilder/IMG-20240319-WA0002.jpg" alt="Hundepflege Beispiel">
-                    <div class="gallery-overlay">
-                        <p>Gepflegte Hundepfoten</p>
-                    </div>
-                </div>
+                <a href="galerie.html" class="cta-button">Mehr Bilder ansehen</a>
             </div>
-            <a href="galerie.html" class="cta-button">Mehr Bilder ansehen</a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Hundesalon Zenetta Senske. Alle Rechte vorbehalten.</p>
-        <div class="contact-info">
-            <p>Inh. Zanetta Senske</p>
-            <p>Tel. 015901076038</p>
-        </div>
         <ul>
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="agb.html">AGB</a></li>
             <li><a href="datenschutz.html">Datenschutz</a></li>
         </ul>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html> 
