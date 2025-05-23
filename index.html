@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hundesalon Zenetta Senske</title>
+    <title>Hundesalon Zeneta Senske</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Ladebildschirm -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <img src="bilder/logo-simple.png" alt="Logo" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    
     <header>
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="bilder/logo-simple.png" alt="Hundesalon Zenetta Senske Logo">
+                    <img src="bilder/logo-simple.png" alt="Hundesalon Zeneta Senske Logo">
                 </a>
             </div>
             <div class="menu-toggle">
@@ -38,7 +47,7 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-            <h1>Willkommen im Hundesalon Zenetta Senske</h1>
+            <h1>Willkommen im Hundesalon Zeneta Senske</h1>
                 <p>Professionelle Hundepflege mit Herz und Verstand</p>
                     </div>
         </section>
@@ -63,8 +72,18 @@
 
         <section class="about"> 
             <div class="about-content">
-                <h2>Über uns</h2>
-                <p>Im Hundesalon Zenetta Senske steht Ihr Hund im Mittelpunkt. Mit jahrelanger Erfahrung und viel Liebe zum Detail sorgen wir für das Wohlbefinden Ihres Vierbeiners.</p>
+                <h2>Über mich</h2>
+                <p>Ich bin eine ausgebildete Hundefriseurin mit Erfahrung in einer Hundeakademie.
+                    Mit Geduld, Einfühlungsvermögen und viel Liebe zum Tier pflege ich Hunde jeder Rasse und Größe.</p>
+                
+                <p>Besonders wichtig ist mir eine ruhige und vertrauensvolle Atmosphäre.
+                    Ich nehme mir Zeit, schaffe ein Umfeld der Fürsorge und des Wohlbefindens – für ein stressfreies Miteinander zwischen Mensch und Hund.</p>
+
+                <div class="languages">
+                    <h3>Kontakt & Sprachen</h3>
+                    <p>Ich spreche Deutsch und Polnisch</p>
+                </div>
+                
                 <a href="leistungen.html" class="cta-button">Unsere Leistungen</a>
             </div>
             <div class="about-image">
@@ -72,42 +91,76 @@
             </div>
         </section>
 
-        <section class="gallery-preview">
-            <h2>Unsere Arbeit</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (9).jpeg" alt="Hundepflege Beispiel">
-                    <div class="gallery-overlay">
-                        <p>Professionelle Fellpflege</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (8).jpeg" alt="Hundepflege Beispiel">
-                    <div class="gallery-overlay">
-                        <p>Vorher-Nachher Transformation</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (7).jpeg" alt="Hundepflege Beispiel">
-                    <div class="gallery-overlay">
-                        <p>Gepflegte Hundepfoten</p>
-                    </div>
-                </div>
+        <!-- Zwei Kästchen nebeneinander: Instagram & Kontakt -->
+        <section class="cta-row">
+            <div class="cta-box instagram-box">
+                <h2>Folgen Sie uns auf Instagram</h2>
+                <p>Entdecken Sie unsere neuesten Arbeiten und bleiben Sie auf dem Laufenden</p>
+                <a href="https://www.instagram.com/zanetasenske.groomer?igsh=NXl3eGdvNDhld2Ux&utm_source=qr" class="instagram-button" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    @zanetasenske.groomer
+                </a>
             </div>
-            <a href="galerie.html" class="cta-button">Mehr Bilder ansehen</a>
-        </section>
-
-        <section class="contact-preview">
-            <div class="contact-content">
+            <div class="cta-box contact-box">
                 <h2>Kontaktieren Sie uns</h2>
                 <p>Vereinbaren Sie einen Termin oder stellen Sie uns Ihre Fragen</p>
                 <a href="kontakt.html" class="cta-button">Kontakt aufnehmen</a>
             </div>
         </section>
+
+        <section class="faq-preview">
+            <h2>🐾 Häufig gestellte Fragen</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">Warum soll ich während der Behandlung nicht im Salon bleiben?</button>
+                    <div class="faq-answer">
+                        <p>Hunde sind ohne ihre Bezugsperson meist ruhiger und entspannter. So kann die Pflege stressfrei und sicher ablaufen.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Sind Verfilzungen gefährlich?</button>
+                    <div class="faq-answer">
+                        <p>Ja, Verfilzungen können zu Hautproblemen und Entzündungen führen. Regelmäßige Pflege schützt deinen Hund.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Müssen auch Hunde mit kurzem Fell zum Hundefriseur?</button>
+                    <div class="faq-answer">
+                        <p>Ja, auch kurzhaarige Hunde profitieren von der Entfernung abgestorbener Haare und Unterwolle.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="faq.html" class="cta-button">Weitere Fragen & Antworten</a>
+        </section>
     </main>
 
+    <section class="gallery-preview">
+        <h2>Unsere Arbeit</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (9).jpeg" alt="Hundepflege Beispiel">
+                <div class="gallery-overlay">
+                    <p>Professionelle Fellpflege</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (8).jpeg" alt="Hundepflege Beispiel">
+                <div class="gallery-overlay">
+                    <p>Vorher-Nachher Transformation</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (7).jpeg" alt="Hundepflege Beispiel">
+                <div class="gallery-overlay">
+                    <p>Gepflegte Hundepfoten</p>
+                </div>
+            </div>
+        </div>
+        <a href="galerie.html" class="cta-button">Mehr Bilder ansehen</a>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Hundesalon Zenetta Senske</p>
+        <p>&copy; 2024 Hundesalon Zeneta Senske</p>
         <ul>
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="agb.html">AGB</a></li>
@@ -120,5 +173,16 @@
     <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="cookie-button accept">Akzeptieren</button>
+                <button id="decline-cookies" class="cookie-button decline">Ablehnen</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html> 
