@@ -1,16 +1,47 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Menü
+    // AOS Initialisierung
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out',
+        once: true,
+        offset: 100
+    });
+
+    // Modernes Hamburger-Menü
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
+
     if(menuToggle && navLinks) {
+        // Erstelle Hamburger-Icon
+        menuToggle.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+
         menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
             navLinks.classList.toggle('active');
+            body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         });
-        // Schließe das Menü, wenn ein Link geklickt wird
+
+        // Schließe Menü bei Klick außerhalb
+        document.addEventListener('click', function(e) {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                body.style.overflow = '';
+            }
+        });
+
+        // Schließe Menü bei Klick auf Link
         const navItems = document.querySelectorAll('.nav-links a');
         navItems.forEach(item => {
             item.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                body.style.overflow = '';
             });
         });
     }
@@ -29,36 +60,41 @@ document.addEventListener('DOMContentLoaded', function() {
             src: item.querySelector('img').src,
             caption: item.querySelector('.gallery-overlay p').textContent
         }));
+
         // Öffne Lightbox
         galleryItems.forEach((item, index) => {
             item.addEventListener('click', () => {
                 currentIndex = index;
                 updateLightbox();
                 lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
+                body.style.overflow = 'hidden';
             });
         });
+
         // Schließe Lightbox
         closeBtn.addEventListener('click', () => {
             lightbox.classList.remove('active');
-            document.body.style.overflow = '';
+            body.style.overflow = '';
         });
+
         // Vorheriges Bild
         prevBtn.addEventListener('click', () => {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             updateLightbox();
         });
+
         // Nächstes Bild
         nextBtn.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % images.length;
             updateLightbox();
         });
+
         // Pfeiltasten-Navigation
         document.addEventListener('keydown', (e) => {
             if (!lightbox.classList.contains('active')) return;
             if (e.key === 'Escape') {
                 lightbox.classList.remove('active');
-                document.body.style.overflow = '';
+                body.style.overflow = '';
             } else if (e.key === 'ArrowLeft') {
                 currentIndex = (currentIndex - 1 + images.length) % images.length;
                 updateLightbox();
@@ -67,25 +103,37 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateLightbox();
             }
         });
+
         // Klicke außerhalb des Bildes zum Schließen
         lightbox.addEventListener('click', (e) => {
             if (e.target === lightbox) {
                 lightbox.classList.remove('active');
-                document.body.style.overflow = '';
+                body.style.overflow = '';
             }
         });
+
         function updateLightbox() {
             lightboxImg.src = images[currentIndex].src;
             lightboxCaption.textContent = images[currentIndex].caption;
         }
     }
 
-    // FAQ Accordion (auf allen Seiten, wo es vorhanden ist)
+    // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
     if(faqQuestions.length > 0) {
         faqQuestions.forEach(btn => {
             btn.addEventListener('click', function() {
                 const item = this.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Schließe alle anderen Items
+                document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                    if (activeItem !== item) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle aktuelles Item
                 item.classList.toggle('active');
             });
         });
@@ -96,16 +144,19 @@ document.addEventListener('DOMContentLoaded', function() {
     if(cookieBanner) {
         const acceptButton = document.getElementById('accept-cookies');
         const declineButton = document.getElementById('decline-cookies');
+        
         // Prüfe, ob der Benutzer bereits eine Auswahl getroffen hat
         if (!localStorage.getItem('cookieChoice')) {
             setTimeout(() => {
                 cookieBanner.classList.add('show');
             }, 1000);
         }
+
         acceptButton.addEventListener('click', function() {
             localStorage.setItem('cookieChoice', 'accepted');
             cookieBanner.classList.remove('show');
         });
+
         declineButton.addEventListener('click', function() {
             localStorage.setItem('cookieChoice', 'declined');
             cookieBanner.classList.remove('show');
