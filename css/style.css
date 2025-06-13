@@ -1151,6 +1151,8 @@ footer ul a:hover {
         transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow: -5px 0 15px rgba(0,0,0,0.1);
         z-index: 1000;
+        display: flex;
+        flex-direction: column;
     }
 
     .nav-links.active {
@@ -1159,6 +1161,7 @@ footer ul a:hover {
 
     .nav-links li {
         margin: 1.5rem 0;
+        width: 100%;
     }
 
     .nav-links a {
@@ -1167,6 +1170,7 @@ footer ul a:hover {
         display: block;
         border-radius: 8px;
         transition: all 0.3s ease;
+        width: 100%;
     }
 
     .nav-links a:hover {
@@ -2132,6 +2136,8 @@ p, li, a, span {
         transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow: -5px 0 15px rgba(0,0,0,0.1);
         z-index: 1000;
+        display: flex;
+        flex-direction: column;
     }
 
     .nav-links.active {
@@ -2140,6 +2146,7 @@ p, li, a, span {
 
     .nav-links li {
         margin: 1.5rem 0;
+        width: 100%;
     }
 
     .nav-links a {
@@ -2148,6 +2155,7 @@ p, li, a, span {
         display: block;
         border-radius: 8px;
         transition: all 0.3s ease;
+        width: 100%;
     }
 
     .nav-links a:hover {
