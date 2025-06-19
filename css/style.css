@@ -2265,4 +2265,227 @@ p, li {
     p, li {
         font-size: 1rem;
     }
+}
+
+/* Service-Leiste (Leistungen auf einen Blick) */
+.service-bar {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    background: var(--gradient-accent);
+    padding: 1.2rem 2rem;
+    box-shadow: 0 4px 18px rgba(77, 208, 225, 0.10);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 1.5rem;
+    z-index: 10;
+    position: relative;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    padding: 1rem 1.2rem;
+    min-width: 120px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-style: normal;
+}
+
+.service-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(77, 208, 225, 0.18);
+}
+
+.service-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.service-item span {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+}
+
+@media (max-width: 900px) {
+    .service-bar {
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
+    .service-item {
+        min-width: 90px;
+        padding: 0.7rem 0.5rem;
+    }
+    .service-item i {
+        font-size: 1.5rem;
+    }
+    .service-item span {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-bar {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.5rem 0.2rem;
+    }
+    .service-item {
+        min-width: 110px;
+        flex: 1 1 45%;
+        margin: 0.2rem 0;
+    }
+}
+
+/* Leistungen-Grid (kompakt, klickbar) */
+.leistungen-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 2rem auto 2rem auto;
+    padding: 0 0.5rem;
+}
+
+.leistung-card {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(77, 208, 225, 0.10);
+    padding: 1.1rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+    min-height: 120px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    cursor: pointer;
+}
+
+.leistung-card:hover, .leistung-card.active {
+    box-shadow: 0 6px 20px rgba(77, 208, 225, 0.18);
+    transform: translateY(-3px) scale(1.03);
+}
+
+.leistung-toggle {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: background 0.2s;
+}
+
+.leistung-toggle i {
+    font-size: 1.7rem;
+    color: var(--accent-color);
+    margin-bottom: 0.3rem;
+}
+
+.leistung-toggle span {
+    font-size: 1rem;
+    color: var(--accent-dark);
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0.2rem;
+}
+
+.leistung-text {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    background: var(--gradient-primary);
+    border-radius: 10px;
+    padding: 0.7rem 0.5rem;
+    box-shadow: 0 1px 4px rgba(77, 208, 225, 0.08);
+    animation: fadeInLeistung 0.3s;
+}
+
+@keyframes fadeInLeistung {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+    .leistungen-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .leistungen-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+        padding: 0 0.2rem;
+    }
+    .leistung-card {
+        padding: 0.8rem 0.2rem 0.4rem 0.2rem;
+        min-height: 90px;
+    }
+    .leistung-toggle i {
+        font-size: 1.2rem;
+    }
+    .leistung-toggle span {
+        font-size: 0.95rem;
+    }
+    .leistung-text {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.2rem;
+    }
+}
+
+/* Instagram Floating Button */
+.instagram-float-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    z-index: 1000;
+    font-size: 2rem;
+    animation: pulse 2s infinite;
+}
+.instagram-float-button i {
+    font-size: 32px;
+}
+.instagram-float-button:hover {
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 8px 25px rgba(193, 53, 132, 0.3);
+}
+@media (max-width: 768px) {
+    .instagram-float-button {
+        width: 50px;
+        height: 50px;
+        bottom: 70px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+    .instagram-float-button i {
+        font-size: 24px;
+    }
 } 

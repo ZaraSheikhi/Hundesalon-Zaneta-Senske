@@ -162,6 +162,38 @@ document.addEventListener('DOMContentLoaded', function() {
             cookieBanner.classList.remove('show');
         });
     }
+
+    // Accordion/Toggle für Leistungen-Grid
+    const leistungToggles = document.querySelectorAll('.leistung-toggle');
+    leistungToggles.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const card = btn.closest('.leistung-card');
+            const text = card.querySelector('.leistung-text');
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+            // Alle anderen schließen
+            document.querySelectorAll('.leistung-card').forEach(c => {
+                if (c !== card) {
+                    c.classList.remove('active');
+                    const t = c.querySelector('.leistung-text');
+                    const b = c.querySelector('.leistung-toggle');
+                    if (t) t.hidden = true;
+                    if (b) b.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Aktuelle Karte toggeln
+            if (!expanded) {
+                card.classList.add('active');
+                text.hidden = false;
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                card.classList.remove('active');
+                text.hidden = true;
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
 });
 
 // Ladebildschirm
