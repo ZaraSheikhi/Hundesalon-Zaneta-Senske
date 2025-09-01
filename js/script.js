@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // AOS Initialisierung
-    AOS.init({
-        duration: 800,
-        easing: 'ease-out',
-        once: true,
-        offset: 100
-    });
+    // AOS Initialisierung (nur wenn vorhanden)
+    if (window.AOS) {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: true,
+            offset: 100
+        });
+    }
 
     // Modernes Hamburger-Menü
     const menuToggle = document.querySelector('.menu-toggle');

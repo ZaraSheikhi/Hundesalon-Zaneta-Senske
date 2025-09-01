@@ -2164,10 +2164,7 @@ p, li, a, span {
     }
 }
 
-/* Lazy Loading für Bilder */
-img {
-    loading: lazy;
-}
+/* Lazy loading handled via HTML attribute */
 
 /* Verbesserte Button-Animationen */
 .cta-button {
