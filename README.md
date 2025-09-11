@@ -1,1 +1,1 @@
-# Hundesalon-Zanetta-Senske
+# Hundesalon-Zaneta-Senske
