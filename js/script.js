@@ -165,10 +165,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Footer-Jahr automatisch setzen
+    const currentYear = new Date().getFullYear();
+    document.querySelectorAll('.current-year').forEach(el => {
+        el.textContent = String(currentYear);
+    });
+
     // Hinweis-Bild auf der Startseite (bis 13. Januar)
     const promoOverlay = document.getElementById('promo-overlay');
     if (promoOverlay) {
-        const promoExpiry = new Date(2025, 0, 13, 23, 59, 59);
+        const promoExpiry = new Date(2026, 0, 13, 23, 59, 59);
         const now = new Date();
         const dismissed = localStorage.getItem('promoDismissedJan13') === '1';
         const closeBtn = promoOverlay.querySelector('.promo-close');
