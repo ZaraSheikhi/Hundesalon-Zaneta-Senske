@@ -165,6 +165,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Hinweis-Bild auf der Startseite (bis 13. Januar)
+    const promoOverlay = document.getElementById('promo-overlay');
+    if (promoOverlay) {
+        const promoExpiry = new Date(2025, 0, 13, 23, 59, 59);
+        const now = new Date();
+        const dismissed = localStorage.getItem('promoDismissedJan13') === '1';
+        const closeBtn = promoOverlay.querySelector('.promo-close');
+
+        const closePromo = () => {
+            promoOverlay.classList.remove('is-visible');
+            promoOverlay.setAttribute('aria-hidden', 'true');
+            body.style.overflow = '';
+            localStorage.setItem('promoDismissedJan13', '1');
+        };
+
+        if (now <= promoExpiry && !dismissed) {
+            promoOverlay.classList.add('is-visible');
+            promoOverlay.setAttribute('aria-hidden', 'false');
+            body.style.overflow = 'hidden';
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closePromo);
+        }
+
+        promoOverlay.addEventListener('click', (e) => {
+            if (e.target === promoOverlay) {
+                closePromo();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && promoOverlay.classList.contains('is-visible')) {
+                closePromo();
+            }
+        });
+    }
+
     // Accordion/Toggle für Leistungen-Grid
     const leistungToggles = document.querySelectorAll('.leistung-toggle');
     leistungToggles.forEach(btn => {
