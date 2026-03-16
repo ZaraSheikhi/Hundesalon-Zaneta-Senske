@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function updateLightbox() {
             lightboxImg.src = images[currentIndex].src;
+            lightboxImg.alt = images[currentIndex].caption;
             lightboxCaption.textContent = images[currentIndex].caption;
         }
     }
