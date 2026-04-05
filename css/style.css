@@ -493,6 +493,15 @@ footer ul a:hover {
     color: var(--accent-color);
 }
 
+.footer-watermark {
+    margin-top: 0.9rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(44, 62, 80, 0.62);
+    font-style: normal;
+}
+
 .services {
     max-width: 1200px;
     margin: 0 auto;
@@ -2485,4 +2494,11 @@ p, li {
     .instagram-float-button i {
         font-size: 24px;
     }
-} 
+}
+
+@media (max-width: 768px) {
+    .footer-watermark {
+        font-size: 0.68rem;
+        letter-spacing: 0.06em;
+    }
+}
