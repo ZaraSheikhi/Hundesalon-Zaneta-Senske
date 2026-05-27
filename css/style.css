@@ -404,79 +404,6 @@ nav {
     font-style: normal;
 }
 
-.shop-page {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.shop-hero {
-    background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(240,249,255,0.96));
-    border: 2px solid rgba(77, 208, 225, 0.2);
-    border-radius: 18px;
-    box-shadow: 0 8px 28px rgba(44, 62, 80, 0.12);
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-.shop-hero h1 {
-    margin-bottom: 1rem;
-    background: var(--gradient-accent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.6rem;
-    font-weight: 800;
-}
-
-.shop-hero p {
-    max-width: 760px;
-    margin: 0 auto 1.5rem;
-    font-size: 1.2rem;
-}
-
-.shop-info-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.shop-info-card,
-.shop-legal-note {
-    background: var(--white);
-    border: 1px solid rgba(77, 208, 225, 0.18);
-    border-radius: 14px;
-    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.09);
-    padding: 1.5rem;
-}
-
-.shop-info-card {
-    text-align: center;
-}
-
-.shop-info-card i {
-    color: var(--accent-color);
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-    font-style: normal;
-}
-
-.shop-info-card h2,
-.shop-legal-note h2 {
-    margin-bottom: 0.8rem;
-    color: var(--accent-dark);
-}
-
-.shop-info-card p,
-.shop-legal-note p {
-    margin-bottom: 0.8rem;
-}
-
-.shop-legal-note {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 @media (max-width: 820px) {
     .partner-shop {
         padding: 0 1rem;
@@ -496,22 +423,6 @@ nav {
     .partner-shop-button {
         width: 100%;
         min-width: 0;
-    }
-
-    .shop-page {
-        padding: 1rem;
-    }
-
-    .shop-hero {
-        padding: 2rem 1.2rem;
-    }
-
-    .shop-hero h1 {
-        font-size: 2rem;
-    }
-
-    .shop-info-grid {
-        grid-template-columns: 1fr;
     }
 }
 
