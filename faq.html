@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b3340">
     <title>FAQ Hundepflege Bremen-Nord | Hundesalon Zaneta Senske</title>
     <meta name="description" content="Häufige Fragen zur Hundepflege in Bremen-Nord: Termine, Trimmen, Fellwechsel und Pflegeintervalle im Hundesalon Zaneta Senske.">
     <meta property="og:title" content="FAQ Hundepflege Bremen-Nord | Hundesalon Zaneta Senske">
@@ -75,115 +76,183 @@
     </script>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="bilder/logo-simple.png" alt="Hundesalon Zaneta Senske Logo">
-                </a>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
+    <a href="#hauptinhalt" class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-ink px-4 py-3 font-bold text-white transition focus:translate-y-0">
+        Zum Hauptinhalt
+    </a>
+
+    <header class="sticky top-0 z-40 border-b border-line/80 bg-white/95 backdrop-blur">
+        <nav class="page-shell relative flex min-h-24 items-center justify-between gap-5" aria-label="Hauptnavigation">
+            <a href="index.html" class="shrink-0 rounded-lg" aria-label="Hundesalon Zaneta Senske – Startseite">
+                <picture>
+                    <source type="image/webp" srcset="bilder/webp/logo-simple-400.webp">
+                    <img class="h-20 w-20 object-contain sm:h-[5.5rem] sm:w-[5.5rem]" src="bilder/logo-simple.png" alt="" width="400" height="400">
+                </picture>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="leistungen.html">Leistungen</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/">Shop-Tiernahrung</a></li>
+                <li><a href="faq.html" aria-current="page">FAQ</a></li>
+                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/" target="_blank" rel="sponsored noopener noreferrer">Shop-Tiernahrung</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <div class="social-links">
-                <a href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
+
+            <div class="hidden shrink-0 items-center gap-2 lg:flex">
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="faq-preview">
-            <h1>Häufige Fragen zur Hundepflege in Bremen-Nord</h1>
-            <p>Hier finden Sie Antworten auf häufige Fragen rund um Termine, Trimmen, Fellwechsel und Pflegeintervalle im Hundesalon Zaneta Senske in Bremen-Rekum.</p>
-            <p>Mehr Informationen zu unseren <a href="leistungen.html">Leistungen und Preisen</a> sowie alle Wege zur <a href="kontakt.html">Terminvereinbarung</a> finden Sie auf den verlinkten Seiten.</p>
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <button class="faq-question">Ab wann sollte mein Hund zum Hundefriseur?</button>
-                    <div class="faq-answer">
-                        <p>Ab der 8.–12. Lebenswoche, um sich früh an die Pflege zu gewöhnen.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Wie oft sollten Hunde mit Unterwolle gepflegt werden?</button>
-                    <div class="faq-answer">
-                        <p>Mindestens 2x im Jahr, idealerweise alle 3 Monate – besonders während des Fellwechsels.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Wie oft sollten schneidbare Felltypen (z. B. Pudel, Doodle) gepflegt werden?</button>
-                    <div class="faq-answer">
-                        <p>Alle 6–8 Wochen, um Verfilzungen und Hautprobleme zu vermeiden.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Wie oft sollten Trimmhunde (Rauhaar) gepflegt werden?</button>
-                    <div class="faq-answer">
-                        <p>Alle 8–12 Wochen, abgestorbenes Deckhaar wird von Hand gezupft.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Müssen kurzhaarige Hunde gepflegt werden?</button>
-                    <div class="faq-answer">
-                        <p>Ja, alle 2–3 Monate – für gesunde Haut und glänzendes Fell.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">Werden läufige Hündinnen gepflegt?</button>
-                    <div class="faq-answer">
-                        <p>Nein, während der Läufigkeit wird keine Pflege durchgeführt.</p>
-                    </div>
+    <main id="hauptinhalt">
+        <section class="subpage-hero" aria-labelledby="faq-page-title">
+            <div class="page-shell">
+                <h1 id="faq-page-title" class="subpage-title">Häufige Fragen zur Hundepflege in Bremen-Nord</h1>
+                <div class="content-intro">
+                    <p>Hier finden Sie Antworten auf häufige Fragen rund um Termine, Trimmen, Fellwechsel und Pflegeintervalle im Hundesalon Zaneta Senske in Bremen-Rekum.</p>
+                    <p>Mehr Informationen zu unseren <a href="leistungen.html">Leistungen und Preisen</a> sowie alle Wege zur <a href="kontakt.html">Terminvereinbarung</a> finden Sie auf den verlinkten Seiten.</p>
                 </div>
             </div>
         </section>
+
+        <div class="bg-white py-10 sm:py-12">
+            <div class="page-shell">
+                <div class="mx-auto max-w-4xl border-t border-line">
+                    <div class="faq-item active">
+                        <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Ab wann sollte mein Hund zum Hundefriseur?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-1">
+                            <p>Ab der 8.–12. Lebenswoche, um sich früh an die Pflege zu gewöhnen.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Wie oft sollten Hunde mit Unterwolle gepflegt werden?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-2" hidden>
+                            <p>Mindestens 2x im Jahr, idealerweise alle 3 Monate – besonders während des Fellwechsels.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Wie oft sollten schneidbare Felltypen (z. B. Pudel, Doodle) gepflegt werden?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" hidden>
+                            <p>Alle 6–8 Wochen, um Verfilzungen und Hautprobleme zu vermeiden.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Wie oft sollten Trimmhunde (Rauhaar) gepflegt werden?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-4" hidden>
+                            <p>Alle 8–12 Wochen, abgestorbenes Deckhaar wird von Hand gezupft.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Müssen kurzhaarige Hunde gepflegt werden?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-5" hidden>
+                            <p>Ja, alle 2–3 Monate – für gesunde Haut und glänzendes Fell.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Werden läufige Hündinnen gepflegt?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-6" hidden>
+                            <p>Nein, während der Läufigkeit wird keine Pflege durchgeführt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
-        <ul>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="agb.html">AGB</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-        </ul>
-        <p class="footer-disclosure">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
-        <p class="footer-watermark">Made by Zara Sheikhi</p>
+    <footer class="bg-ink py-10 text-white">
+        <div class="page-shell grid gap-8 lg:grid-cols-[1fr_auto_1.25fr] lg:items-center">
+            <p class="text-sm">&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
+            <ul class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                <li><a class="transition hover:text-aqua" href="faq.html">FAQ</a></li>
+                <li><a class="transition hover:text-aqua" href="impressum.html">Impressum</a></li>
+                <li><a class="transition hover:text-aqua" href="agb.html">AGB</a></li>
+                <li><a class="transition hover:text-aqua" href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+            <div class="lg:text-right">
+                <p class="text-xs leading-5 text-white/70">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
+                <div class="mt-4 flex items-center gap-3 lg:justify-end">
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <span class="ml-2 text-xs text-white/60">Made by Zara Sheikhi</span>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
-    
-    <!-- WhatsApp Kontakt Button -->
-    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <!-- Cookie Banner -->
-    <div id="cookie-banner" class="cookie-banner">
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-Einstellungen" aria-hidden="true">
         <div class="cookie-content">
             <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
             <div class="cookie-buttons">
-                <button id="accept-cookies" class="cookie-button accept">Akzeptieren</button>
-                <button id="decline-cookies" class="cookie-button decline">Ablehnen</button>
+                <button id="accept-cookies" class="cookie-button accept" type="button">Akzeptieren</button>
+                <button id="decline-cookies" class="cookie-button decline" type="button">Ablehnen</button>
             </div>
         </div>
     </div>
+
+    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Termin über WhatsApp anfragen">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

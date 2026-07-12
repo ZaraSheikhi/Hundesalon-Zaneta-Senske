@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BW7RLPSHVM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BW7RLPSHVM');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b3340">
     <title>Hundesalon in Bremen-Nord | Hundefriseur Zaneta Senske</title>
-    
-    <!-- SEO Meta Tags -->
+
     <meta name="description" content="Hundesalon Zaneta Senske in Bremen-Nord, Rekum: professionelle Hundepflege, Schneiden, Scheren, Trimmen und Carding nach Terminvereinbarung.">
     <meta name="author" content="Zaneta Senske">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
+
     <meta property="og:title" content="Hundesalon in Bremen-Nord | Hundefriseur Zaneta Senske">
     <meta property="og:description" content="Professionelle Hundepflege in Bremen-Nord mit Schneiden, Scheren, Trimmen und Carding für Ihren Hund.">
     <meta property="og:image" content="https://hundesalon-zanetasenske.de/bilder/logo-simple.png">
     <meta property="og:url" content="https://hundesalon-zanetasenske.de/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
-    
-    <!-- Twitter Card Meta Tags -->
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hundesalon in Bremen-Nord | Hundefriseur Zaneta Senske">
     <meta name="twitter:description" content="Hundepflege in Bremen-Nord mit Fellpflege, Trimmen, Carding und individueller Beratung.">
     <meta name="twitter:image" content="https://hundesalon-zanetasenske.de/bilder/logo-simple.png">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://hundesalon-zanetasenske.de/">
 
+    <link rel="canonical" href="https://hundesalon-zanetasenske.de/">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
-    <!-- LocalBusiness Structured Data -->
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -70,13 +55,7 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "09:00",
           "closes": "18:00"
         },
@@ -91,407 +70,389 @@
         "https://www.instagram.com/zanetasenske.groomer/"
       ],
       "areaServed": [
-        {
-          "@type": "City",
-          "name": "Bremen"
-        },
-        {
-          "@type": "Place",
-          "name": "Bremen-Nord"
-        },
-        {
-          "@type": "Place",
-          "name": "Rekum"
-        }
+        {"@type": "City", "name": "Bremen"},
+        {"@type": "Place", "name": "Bremen-Nord"},
+        {"@type": "Place", "name": "Rekum"}
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+49 159 01076038",
         "contactType": "customer service",
-        "availableLanguage": [
-          "de",
-          "pl"
-        ]
+        "availableLanguage": ["de", "pl"]
       },
       "hasMap": "https://www.google.com/maps/place/Rekumer+Wurt+8,+28777+Bremen"
     }
     </script>
 
-    <!-- Performance hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://unpkg.com">
-    
-    <!-- Favicon -->
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <style>
-        .promo-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.65);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-            z-index: 2000;
-        }
-        .promo-overlay.is-visible {
-            display: flex;
-        }
-        .promo-modal {
-            position: relative;
-            max-width: 860px;
-            width: min(92vw, 860px);
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
-        }
-        .promo-image {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-        .promo-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            border: none;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 999px;
-            width: 36px;
-            height: 36px;
-            font-size: 22px;
-            line-height: 1;
-            cursor: pointer;
-        }
-        .announcement-banner {
-            background: linear-gradient(135deg, #fff7e1 0%, #f6ecd1 100%);
-            border-bottom: 2px solid #e0c96d;
-            padding: 18px 0;
-        }
-        .announcement-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-        .announcement-text {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            color: #5a4718;
-        }
-        .announcement-thumb {
-            width: 120px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(90, 71, 24, 0.2);
-        }
-        .announcement-tag {
-            display: inline-block;
-            background: #b48a2c;
-            color: #fff;
-            padding: 4px 10px;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            width: fit-content;
-        }
-        .announcement-cta {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: #2f2511;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 18px;
-            border-radius: 999px;
-            font-weight: 600;
-            white-space: nowrap;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .announcement-cta:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 8px 18px rgba(47, 37, 17, 0.25);
-        }
-        @media (max-width: 720px) {
-            .announcement-inner {
-                align-items: flex-start;
-            }
-            .announcement-cta {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/tailwind.css">
+
 </head>
-<body>
-        <div class="promo-overlay" id="promo-overlay" aria-hidden="true">
-            <div class="promo-modal" role="dialog" aria-modal="true" aria-label="Hinweis">
-                <button class="promo-close" type="button" aria-label="Hinweis schließen">&times;</button>
-                <img class="promo-image" src="nachricht.jpg" alt="Hinweis des Hundesalons Zaneta Senske">
+<body data-analytics-id="G-BW7RLPSHVM">
+    <a href="#hauptinhalt" class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-ink px-4 py-3 font-bold text-white transition focus:translate-y-0">
+        Zum Hauptinhalt
+    </a>
+
+    <aside class="border-b border-aqua bg-aqua-soft" aria-label="Video-Ankündigung">
+        <div class="page-shell flex flex-col gap-4 py-4 sm:flex-row sm:items-center lg:gap-8">
+            <img class="h-14 w-24 shrink-0 rounded-lg object-cover shadow-sm" src="butenunbinnen.jpg" width="1280" height="720" alt="Vorschau auf den buten un binnen Beitrag über den Hundesalon Zaneta Senske">
+            <div class="min-w-0 flex-1">
+                <p class="text-sm font-extrabold text-ink sm:text-base">Neu im Lokalfernsehen</p>
+                <p class="mt-1 text-sm font-bold text-ink">Unser Hundesalon bei buten un binnen</p>
             </div>
+            <p class="hidden text-sm text-ink-soft xl:block">Einblicke, Tipps und das Team im Beitrag.</p>
+            <a class="button-primary w-full shrink-0 sm:w-auto" href="https://www.butenunbinnen.de/videos/dicht-bei-hundesalon-zeneta-senske-100.html" target="_blank" rel="noopener noreferrer">
+                Beitrag ansehen
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
-        <!-- Ankündigung: Lokalnachrichten-Video -->
-        <section class="announcement-banner" aria-label="Video-Ankündigung">
-            <div class="announcement-inner">
-                <img class="announcement-thumb" src="butenunbinnen.jpg" alt="Vorschau auf den buten un binnen Beitrag über den Hundesalon Zaneta Senske">
-                <div class="announcement-text">
-                    <span class="announcement-tag">Neu im Lokalfernsehen</span>
-                    <strong>Unser Hundesalon bei buten un binnen</strong>
-                    <span>Einblicke, Tipps und das Team im Beitrag.</span>
-                </div>
-                <a class="announcement-cta" href="https://www.butenunbinnen.de/videos/dicht-bei-hundesalon-zeneta-senske-100.html" target="_blank" rel="noopener noreferrer">
-                    Beitrag ansehen
-                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                </a>
-            </div>
-        </section>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="bilder/logo-simple.png" alt="Hundesalon Zaneta Senske Logo">
-                </a>
-            </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+    </aside>
+
+    <header class="sticky top-0 z-40 border-b border-line/80 bg-white/95 backdrop-blur">
+        <nav class="page-shell relative flex min-h-24 items-center justify-between gap-5" aria-label="Hauptnavigation">
+            <a href="index.html" class="shrink-0 rounded-lg" aria-label="Hundesalon Zaneta Senske – Startseite">
+                <picture>
+                    <source type="image/webp" srcset="bilder/webp/logo-simple-400.webp">
+                    <img class="h-20 w-20 object-contain sm:h-[5.5rem] sm:w-[5.5rem]" src="bilder/logo-simple.png" alt="" width="400" height="400">
+                </picture>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="leistungen.html">Leistungen</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/">Shop-Tiernahrung</a></li>
+                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/" target="_blank" rel="sponsored noopener noreferrer">Shop-Tiernahrung</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <div class="social-links">
-                <a href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
+
+            <div class="hidden shrink-0 items-center gap-2 lg:flex">
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero" role="banner" aria-label="Hauptbereich">
-            <div class="hero-content" data-aos="fade-up">
-                <h1>Hundesalon in Bremen-Nord für liebevolle Fellpflege</h1>
-                <p>Hundesalon Zaneta Senske in Rekum für Schneiden, Scheren, Trimmen und Carding nach Terminvereinbarung.</p>
-                <a href="kontakt.html" class="cta-button hero-cta" role="button" aria-label="Jetzt Termin vereinbaren">
-                    <i class="fas fa-calendar-check"></i>
-                    Jetzt Termin vereinbaren
-                </a>
-            </div>
-        </section>
-
-        <section class="features" role="region" aria-label="Unsere Leistungen">
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-spa" aria-hidden="true"></i>
-                <h2>Professionelle Pflege</h2>
-                <p>Sanfte und professionelle Fellpflege für Ihren Liebling</p>
-            </div>
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-heart" aria-hidden="true"></i>
-                <h2>Individuelle Betreuung</h2>
-                <p>Maßgeschneiderte Pflege für jede Rasse und jedes Fell</p>
-            </div>
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-clock" aria-hidden="true"></i>
-                <h2>Flexible Termine</h2>
-                <p>Termine nach Ihren Wünschen und Bedürfnissen</p>
-            </div>
-        </section>
-
-        <section class="about"> 
-            <div class="about-content">
-                <h2>Über mich</h2>
-                <p>Ich bin eine ausgebildete Hundefriseurin mit Erfahrung als Dozentin. Mit Geduld, Einfühlungsvermögen und viel Liebe zum Tier pflege ich Hunde jeder Rasse und Größe im Hundesalon Zaneta Senske in Bremen-Nord.</p>
-                
-                <p>Besonders wichtig ist mir eine ruhige und vertrauensvolle Atmosphäre. Ich nehme mir Zeit, schaffe ein Umfeld der Fürsorge und des Wohlbefindens für stressfreie Fellpflege, Hundefrisuren und Trimmen.</p>
-
-                <div class="languages">
-                    <h3>Kontakt & Sprachen</h3>
-                    <p>Ich spreche Deutsch und Polnisch</p>
-                </div>
-
-                <p>Erfahren Sie mehr über unsere <a href="leistungen.html">Leistungen und Preise</a>, lesen Sie <a href="faq.html">häufige Fragen zur Hundepflege</a> oder nehmen Sie direkt <a href="kontakt.html">Kontakt für Ihren Wunschtermin</a> auf.</p>
-                <a href="leistungen.html" class="cta-button">Unsere Leistungen</a>
-            </div>
-            <div class="about-image">
-                <picture>
-                    <source type="image/webp" srcset="
-                        bilder/webp/zaneta-ausgeschnitten-400.webp 400w,
-                        bilder/webp/zaneta-ausgeschnitten-800.webp 800w,
-                        bilder/webp/zaneta-ausgeschnitten-1200.webp 1200w,
-                        bilder/webp/zaneta-ausgeschnitten-1600.webp 1600w">
-                    <img src="bilder/zaneta-ausgeschnitten.jpg" alt="Zaneta Senske im Hundesalon in Bremen-Nord" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 600px">
-                </picture>
-            </div>
-        </section>
-
-        <!-- Leistungen-Grid: Modern, klickbar, kompakt -->
-        <section class="leistungen-grid" aria-label="Unsere Leistungen">
-            <div class="leistung-card toggle-card">
-                <button class="leistung-toggle" aria-expanded="false">
-                    <i class="fas fa-cut" aria-hidden="true"></i>
-                    <span>Schneiden & Scheren</span>
-                </button>
-                <div class="leistung-text" hidden>
-                    Sanftes Schneiden und Scheren für alle Felltypen – individuell auf Ihren Hund abgestimmt.
-                </div>
-            </div>
-            <div class="leistung-card toggle-card">
-                <button class="leistung-toggle" aria-expanded="false">
-                    <i class="fas fa-dog" aria-hidden="true"></i>
-                    <span>Carding (Unterwolle)</span>
-                </button>
-                <div class="leistung-text" hidden>
-                    Professionelle Entfernung der Unterwolle für weniger Haaren und gesunde Haut.
-                </div>
-            </div>
-            <div class="leistung-card toggle-card">
-                <button class="leistung-toggle" aria-expanded="false">
-                    <i class="fas fa-hand-paper" aria-hidden="true"></i>
-                    <span>Trimmen von Hand</span>
-                </button>
-                <div class="leistung-text" hidden>
-                    Handtrimming für spezielle Fellstrukturen – besonders schonend und präzise.
-                </div>
-            </div>
-            <div class="leistung-card toggle-card">
-                <button class="leistung-toggle" aria-expanded="false">
-                    <i class="fas fa-comments" aria-hidden="true"></i>
-                    <span>Beratung & Fellpflege</span>
-                </button>
-                <div class="leistung-text" hidden>
-                    Individuelle Beratung und Tipps zur optimalen Fellpflege Ihres Lieblings.
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-preview">
-            <h2>🐾 Häufig gestellte Fragen</h2>
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <button class="faq-question">Warum soll ich während der Behandlung nicht im Salon bleiben?</button>
-                    <div class="faq-answer">
-                        <p>Hunde sind ohne ihre Bezugsperson meist ruhiger und entspannter. So kann die Pflege stressfrei und sicher ablaufen.</p>
+    <main id="hauptinhalt">
+        <section class="bg-white py-12 sm:py-16 lg:py-20" aria-labelledby="hero-title">
+            <div class="page-shell grid items-center gap-10 lg:grid-cols-[1.04fr_1fr]">
+                <div class="max-w-2xl">
+                    <h1 id="hero-title" class="font-display text-[clamp(2.75rem,4.8vw,4.6rem)] font-semibold leading-[1.01] tracking-[-0.035em] text-ink">
+                        Hundesalon in Bremen-Nord für liebevolle Fellpflege
+                    </h1>
+                    <p class="mt-7 max-w-xl text-base font-medium leading-8 text-ink-soft sm:text-lg">
+                        Hundesalon Zaneta Senske in Rekum für Schneiden, Scheren, Trimmen und Carding nach Terminvereinbarung.
+                    </p>
+                    <div class="mt-8">
+                        <a href="kontakt.html" class="button-primary sm:px-8 sm:py-4 sm:text-lg">
+                            Jetzt Termin vereinbaren
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">Sind Verfilzungen gefährlich?</button>
-                    <div class="faq-answer">
-                        <p>Ja, Verfilzungen können zu Hautproblemen und Entzündungen führen. Regelmäßige Pflege schützt deinen Hund.</p>
-                    </div>
+
+                <div class="relative">
+                    <div class="absolute -bottom-5 -left-5 h-32 w-32 rounded-3xl bg-aqua-soft" aria-hidden="true"></div>
+                    <picture class="relative block overflow-hidden rounded-[1.75rem] bg-aqua-soft shadow-soft">
+                        <source type="image/webp" srcset="
+                            bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(2)-400.webp 400w,
+                            bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(2)-800.webp 800w,
+                            bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(2)-1200.webp 1200w,
+                            bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(2)-1600.webp 1600w">
+                        <img class="aspect-[1.28/1] h-full w-full object-cover" src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (2).jpeg" alt="Frisch gepflegter weißer Hund im Hundesalon Zaneta Senske" width="1200" height="1200" fetchpriority="high" decoding="async" sizes="(max-width: 1023px) 100vw, 48vw">
+                    </picture>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">Müssen auch Hunde mit kurzem Fell zum Hundefriseur?</button>
-                    <div class="faq-answer">
-                        <p>Ja, auch kurzhaarige Hunde profitieren von der Entfernung abgestorbener Haare und Unterwolle.</p>
+            </div>
+        </section>
+
+        <section class="border-y border-aqua bg-aqua-soft" aria-label="Das zeichnet unseren Hundesalon aus">
+            <div class="page-shell grid py-3 lg:grid-cols-3">
+                <article class="flex gap-5 border-b border-line py-7 lg:border-b-0 lg:border-r lg:pr-8">
+                    <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-aqua text-ink" aria-hidden="true">
+                        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none">
+                            <path d="M8.5 3.5 12 11m3.5-7.5L12 11m0 0-4.5 9.5M12 11l4.5 9.5M5 20.5h14M6 5l3 3M18 5l-3 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="font-display text-2xl font-semibold">Professionelle Pflege</h2>
+                        <p class="mt-2 text-sm leading-6 text-ink-soft">Sanfte und professionelle Fellpflege für Ihren Liebling</p>
+                    </div>
+                </article>
+                <article class="flex gap-5 border-b border-line py-7 lg:border-b-0 lg:border-r lg:px-8">
+                    <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-aqua text-ink" aria-hidden="true">
+                        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 1 0-7.6 7.6L12 21l8.8-8.8a5.4 5.4 0 0 0 0-7.6Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="font-display text-2xl font-semibold">Individuelle Betreuung</h2>
+                        <p class="mt-2 text-sm leading-6 text-ink-soft">Maßgeschneiderte Pflege für jede Rasse und jedes Fell</p>
+                    </div>
+                </article>
+                <article class="flex gap-5 py-7 lg:pl-8">
+                    <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-aqua text-ink" aria-hidden="true">
+                        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/>
+                            <path d="M16 3v4M8 3v4M3 10h18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <div>
+                        <h2 class="font-display text-2xl font-semibold">Flexible Termine</h2>
+                        <p class="mt-2 text-sm leading-6 text-ink-soft">Termine nach Ihren Wünschen und Bedürfnissen</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="overflow-hidden bg-apricot-soft" aria-labelledby="about-title">
+            <div class="page-shell grid items-end gap-8 pt-16 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16">
+                <div class="order-2 mx-auto max-w-lg self-end lg:order-1">
+                    <picture>
+                        <source type="image/webp" srcset="
+                            bilder/webp/zaneta-ausgeschnitten-400.webp 400w,
+                            bilder/webp/zaneta-ausgeschnitten-800.webp 800w,
+                            bilder/webp/zaneta-ausgeschnitten-1200.webp 1200w,
+                            bilder/webp/zaneta-ausgeschnitten-1600.webp 1600w">
+                        <img class="max-h-[38rem] w-full object-contain object-bottom mix-blend-multiply" src="bilder/zaneta-ausgeschnitten.jpg" alt="Zaneta Senske mit professionellen Scheren im Hundesalon" width="1205" height="1600" loading="lazy" decoding="async" sizes="(max-width: 1023px) 90vw, 42vw">
+                    </picture>
+                </div>
+
+                <div class="order-1 pb-2 lg:order-2 lg:pb-16">
+                    <h2 id="about-title" class="font-display text-5xl font-semibold tracking-[-0.025em] sm:text-6xl">Über mich</h2>
+                    <div class="mt-7 max-w-2xl space-y-5 text-base leading-8 text-ink-soft">
+                        <p>Ich bin eine ausgebildete Hundefriseurin mit Erfahrung als Dozentin. Mit Geduld, Einfühlungsvermögen und viel Liebe zum Tier pflege ich Hunde jeder Rasse und Größe im Hundesalon Zaneta Senske in Bremen-Nord.</p>
+                        <p>Besonders wichtig ist mir eine ruhige und vertrauensvolle Atmosphäre. Ich nehme mir Zeit, schaffe ein Umfeld der Fürsorge und des Wohlbefindens für stressfreie Fellpflege, Hundefrisuren und Trimmen.</p>
+                    </div>
+                    <div class="mt-7">
+                        <h3 class="text-base font-extrabold">Kontakt &amp; Sprachen</h3>
+                        <p class="mt-2 text-ink-soft">Ich spreche Deutsch und Polnisch</p>
+                    </div>
+                    <a href="leistungen.html" class="button-primary mt-7">
+                        Unsere Leistungen
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="mt-7 flex flex-col gap-3 border-t border-[#ead9cb] pt-5 text-sm font-bold text-aqua-strong sm:flex-row sm:flex-wrap sm:gap-x-6">
+                        <a class="hover:text-ink" href="leistungen.html">Leistungen und Preise →</a>
+                        <a class="hover:text-ink" href="faq.html">Häufige Fragen zur Hundepflege →</a>
+                        <a class="hover:text-ink" href="kontakt.html">Kontakt für Ihren Wunschtermin →</a>
                     </div>
                 </div>
             </div>
-            <a href="faq.html" class="cta-button">Weitere Fragen & Antworten</a>
+        </section>
+
+        <section class="bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="services-title">
+            <div class="page-shell">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 id="services-title" class="font-display text-4xl font-semibold tracking-[-0.025em] sm:text-6xl">Pflege, die zum Fell passt</h2>
+                    <div class="mx-auto mt-5 h-0.5 w-16 bg-aqua-strong" aria-hidden="true"></div>
+                </div>
+
+                <div class="mt-12 grid md:grid-cols-2 xl:grid-cols-4">
+                    <div class="leistung-card active">
+                        <button class="leistung-toggle" type="button" aria-expanded="true" aria-controls="service-cut">
+                            <span>Schneiden &amp; Scheren</span>
+                            <span class="leistung-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="leistung-text" id="service-cut">
+                            Sanftes Schneiden und Scheren für alle Felltypen – individuell auf Ihren Hund abgestimmt.
+                        </div>
+                    </div>
+                    <div class="leistung-card">
+                        <button class="leistung-toggle" type="button" aria-expanded="false" aria-controls="service-carding">
+                            <span>Carding (Unterwolle)</span>
+                            <span class="leistung-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="leistung-text" id="service-carding" hidden>
+                            Professionelle Entfernung der Unterwolle für weniger lose Haare und eine gesunde Haut.
+                        </div>
+                    </div>
+                    <div class="leistung-card">
+                        <button class="leistung-toggle" type="button" aria-expanded="false" aria-controls="service-trim">
+                            <span>Trimmen von Hand</span>
+                            <span class="leistung-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="leistung-text" id="service-trim" hidden>
+                            Handtrimming für spezielle Fellstrukturen – besonders schonend und präzise.
+                        </div>
+                    </div>
+                    <div class="leistung-card">
+                        <button class="leistung-toggle" type="button" aria-expanded="false" aria-controls="service-advice">
+                            <span>Beratung &amp; Fellpflege</span>
+                            <span class="leistung-icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="leistung-text" id="service-advice" hidden>
+                            Individuelle Beratung und Tipps zur optimalen Fellpflege Ihres Lieblings.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-t border-line bg-white py-16 sm:py-20" aria-labelledby="faq-title">
+            <div class="page-shell grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
+                <div class="lg:sticky lg:top-36 lg:self-start">
+                    <h2 id="faq-title" class="font-display text-5xl font-semibold leading-none tracking-[-0.025em] sm:text-6xl">Häufig gestellte Fragen</h2>
+                    <p class="mt-6 max-w-md text-base leading-8 text-ink-soft">Antworten auf häufige Fragen rund um die Hundepflege im Hundesalon Zaneta Senske.</p>
+                    <a href="faq.html" class="button-primary mt-7">
+                        Weitere Fragen &amp; Antworten
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="border-t border-line">
+                    <div class="faq-item active">
+                        <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Warum soll ich während der Behandlung nicht im Salon bleiben?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-1">
+                            <p>Hunde sind ohne ihre Bezugsperson meist ruhiger und entspannter. So kann die Pflege stressfrei und sicher ablaufen.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Sind Verfilzungen gefährlich?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-2" hidden>
+                            <p>Ja, Verfilzungen können zu Hautproblemen und Entzündungen führen. Regelmäßige Pflege schützt deinen Hund.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span class="faq-marker" aria-hidden="true"></span>
+                            <span class="flex-1">Müssen auch Hunde mit kurzem Fell zum Hundefriseur?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3" hidden>
+                            <p>Ja, auch kurzhaarige Hunde profitieren von der Entfernung abgestorbener Haare und Unterwolle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-y border-aqua bg-aqua-soft py-14 sm:py-16" aria-labelledby="gallery-title">
+            <div class="page-shell">
+                <div class="mx-auto max-w-4xl text-center">
+                    <h2 id="gallery-title" class="font-display text-4xl font-semibold tracking-[-0.025em] sm:text-6xl">Einblicke in unsere Hundepflege in Bremen-Nord</h2>
+                    <div class="mx-auto mt-5 h-0.5 w-16 bg-aqua-strong" aria-hidden="true"></div>
+                </div>
+
+                <div class="mt-10 grid gap-7 md:grid-cols-3">
+                    <figure>
+                        <picture class="block overflow-hidden rounded-2xl bg-white shadow-soft">
+                            <source type="image/webp" srcset="
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(9)-400.webp 400w,
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(9)-800.webp 800w,
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(9)-1200.webp 1200w">
+                            <img class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-[1.02]" src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (9).jpeg" alt="Hund nach professioneller Fellpflege im Hundesalon Zaneta Senske" width="1200" height="1200" loading="lazy" decoding="async" sizes="(max-width: 767px) 100vw, 33vw">
+                        </picture>
+                        <figcaption class="mt-4 text-center text-sm font-bold sm:text-base">Professionelle Fellpflege</figcaption>
+                    </figure>
+                    <figure>
+                        <picture class="block overflow-hidden rounded-2xl bg-white shadow-soft">
+                            <source type="image/webp" srcset="
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(8)-400.webp 400w,
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(8)-800.webp 800w,
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(8)-1200.webp 1200w">
+                            <img class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-[1.02]" src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (8).jpeg" alt="Vorher-Nachher-Ergebnis einer Hundefrisur im Hundesalon in Bremen-Rekum" width="1200" height="1200" loading="lazy" decoding="async" sizes="(max-width: 767px) 100vw, 33vw">
+                        </picture>
+                        <figcaption class="mt-4 text-center text-sm font-bold sm:text-base">Vorher-Nachher Transformation</figcaption>
+                    </figure>
+                    <figure>
+                        <picture class="block overflow-hidden rounded-2xl bg-white shadow-soft">
+                            <source type="image/webp" srcset="
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(7)-400.webp 400w,
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(7)-800.webp 800w,
+                                bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(7)-1200.webp 1200w">
+                            <img class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-[1.02]" src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (7).jpeg" alt="Gepflegte Hundepfoten nach Pfotenpflege und Fellschnitt in Bremen-Nord" width="1200" height="1200" loading="lazy" decoding="async" sizes="(max-width: 767px) 100vw, 33vw">
+                        </picture>
+                        <figcaption class="mt-4 text-center text-sm font-bold sm:text-base">Gepflegte Hundepfoten</figcaption>
+                    </figure>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="galerie.html" class="button-primary">
+                        Mehr Bilder ansehen
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <section class="gallery-preview">
-        <h2>Einblicke in unsere Hundepflege in Bremen-Nord</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <picture>
-                    <source type="image/webp" srcset="
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(9)-400.webp 400w,
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(9)-800.webp 800w,
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(9)-1200.webp 1200w">
-                    <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (9).jpeg" alt="Hund nach professioneller Fellpflege im Hundesalon Zaneta Senske in Bremen-Nord" loading="lazy" decoding="async" sizes="(max-width: 600px) 100vw, 300px">
-                </picture>
-                <div class="gallery-overlay">
-                    <p>Professionelle Fellpflege</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <picture>
-                    <source type="image/webp" srcset="
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(8)-400.webp 400w,
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(8)-800.webp 800w,
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(8)-1200.webp 1200w">
-                    <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (8).jpeg" alt="Vorher-Nachher-Ergebnis einer Hundefrisur im Hundesalon in Bremen-Rekum" loading="lazy" decoding="async" sizes="(max-width: 600px) 100vw, 300px">
-                </picture>
-                <div class="gallery-overlay">
-                    <p>Vorher-Nachher Transformation</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <picture>
-                    <source type="image/webp" srcset="
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(7)-400.webp 400w,
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(7)-800.webp 800w,
-                        bilder/webp/WhatsApp%20Image%202025-04-19%20at%2010.21.42%20(7)-1200.webp 1200w">
-                    <img src="bilder/WhatsApp Image 2025-04-19 at 10.21.42 (7).jpeg" alt="Gepflegte Hundepfoten nach Pfotenpflege und Fellschnitt in Bremen-Nord" loading="lazy" decoding="async" sizes="(max-width: 600px) 100vw, 300px">
-                </picture>
-                <div class="gallery-overlay">
-                    <p>Gepflegte Hundepfoten</p>
+    <footer class="bg-ink py-10 text-white">
+        <div class="page-shell grid gap-8 lg:grid-cols-[1fr_auto_1.25fr] lg:items-center">
+            <p class="text-sm">&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
+            <ul class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                <li><a class="transition hover:text-aqua" href="faq.html">FAQ</a></li>
+                <li><a class="transition hover:text-aqua" href="impressum.html">Impressum</a></li>
+                <li><a class="transition hover:text-aqua" href="agb.html">AGB</a></li>
+                <li><a class="transition hover:text-aqua" href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+            <div class="lg:text-right">
+                <p class="text-xs leading-5 text-white/70">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
+                <div class="mt-4 flex items-center gap-3 lg:justify-end">
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <span class="ml-2 text-xs text-white/60">Made by Zara Sheikhi</span>
                 </div>
             </div>
         </div>
-        <a href="galerie.html" class="cta-button">Mehr Bilder ansehen</a>
-    </section>
-
-    <footer>
-        <p>&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
-        <ul>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="agb.html">AGB</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-        </ul>
-        <p class="footer-disclosure">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
-        <p class="footer-watermark">Made by Zara Sheikhi</p>
     </footer>
-    <script src="js/script.js"></script>
-    
-    <!-- WhatsApp Kontakt Button -->
-    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <!-- Instagram Button -->
-    <a href="https://www.instagram.com/zanetasenske.groomer/" class="instagram-float-button" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <!-- Cookie Banner -->
-    <div id="cookie-banner" class="cookie-banner">
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-Einstellungen" aria-hidden="true">
         <div class="cookie-content">
             <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
             <div class="cookie-buttons">
-                <button id="accept-cookies" class="cookie-button accept">Akzeptieren</button>
-                <button id="decline-cookies" class="cookie-button decline">Ablehnen</button>
+                <button id="accept-cookies" class="cookie-button accept" type="button">Akzeptieren</button>
+                <button id="decline-cookies" class="cookie-button decline" type="button">Ablehnen</button>
             </div>
         </div>
     </div>
+
+    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Termin über WhatsApp anfragen">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

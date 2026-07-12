@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0b3340">
     <title>Datenschutz - Hundesalon Zaneta Senske</title>
     <meta name="description" content="Datenschutzerklärung des Hundesalon Zaneta Senske: Informationen zu Datenerfassung, Verarbeitung und Ihren Rechten.">
     <meta property="og:title" content="Datenschutz | Hundesalon Zaneta Senske">
@@ -19,47 +20,75 @@
     <link rel="canonical" href="https://hundesalon-zanetasenske.de/datenschutz.html">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="bilder/logo-simple.png" alt="Hundesalon Zaneta Senske Logo">
-                </a>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
+    <a href="#hauptinhalt" class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-ink px-4 py-3 font-bold text-white transition focus:translate-y-0">
+        Zum Hauptinhalt
+    </a>
+
+    <header class="sticky top-0 z-40 border-b border-line/80 bg-white/95 backdrop-blur">
+        <nav class="page-shell relative flex min-h-24 items-center justify-between gap-5" aria-label="Hauptnavigation">
+            <a href="index.html" class="shrink-0 rounded-lg" aria-label="Hundesalon Zaneta Senske – Startseite">
+                <picture>
+                    <source type="image/webp" srcset="bilder/webp/logo-simple-400.webp">
+                    <img class="h-20 w-20 object-contain sm:h-[5.5rem] sm:w-[5.5rem]" src="bilder/logo-simple.png" alt="" width="400" height="400">
+                </picture>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="leistungen.html">Leistungen</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/">Shop-Tiernahrung</a></li>
+                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/" target="_blank" rel="sponsored noopener noreferrer">Shop-Tiernahrung</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <div class="social-links">
-                <a href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
+
+            <div class="hidden shrink-0 items-center gap-2 lg:flex">
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="datenschutz">
-            <h1>Datenschutzerklärung</h1>
-            
-            <div class="datenschutz-content">
+    <main id="hauptinhalt">
+        <section class="legal-hero" aria-labelledby="legal-title">
+            <div class="page-shell">
+                <h1 id="legal-title" class="legal-title">Datenschutzerklärung</h1>
+            </div>
+        </section>
+
+        <section class="bg-white py-10 sm:py-14 lg:py-20">
+            <div class="page-shell legal-layout">
+                <aside class="legal-nav">
+                    <p class="text-sm font-extrabold uppercase tracking-[0.16em] text-aqua-strong">Rechtliches</p>
+                    <nav class="mt-4" aria-label="Rechtliche Seiten">
+                        <ul>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="agb.html">AGB</a></li>
+                            <li><a href="datenschutz.html" aria-current="page">Datenschutz</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <article class="legal-content">
                 <h2>1. Datenschutz auf einen Blick</h2>
                 <h3>Allgemeine Hinweise</h3>
                 <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
@@ -166,48 +195,60 @@
                 <h3>Instagram</h3>
                 <p>Auf dieser Website sind Elemente des Dienstes Instagram eingebunden. Diese Elemente werden von der Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland angeboten.</p>
                 <p>Wenn das Social-Media-Element aktiv ist, wird eine direkte Verbindung zwischen Ihrem Endgerät und dem Instagram-Server hergestellt. Instagram erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse diese Website besucht haben. Wenn Sie den Instagram-Button anklicken, während Sie in Ihrem Instagram-Account eingeloggt sind, können Sie die Inhalte dieser Website mit Ihrem Instagram-Profil verlinken. Dadurch kann Instagram den Besuch dieser Website Ihrem Benutzerkonto zuordnen.</p>
-                <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Instagram erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram: <a href="https://instagram.com/about/legal/privacy/" target="_blank">https://instagram.com/about/legal/privacy/</a>.</p>
+                <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Instagram erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram: <a href="https://instagram.com/about/legal/privacy/" target="_blank" rel="noopener noreferrer">https://instagram.com/about/legal/privacy/</a>.</p>
 
                 <h3>Facebook</h3>
                 <p>Auf dieser Website sind Elemente des Dienstes Facebook eingebunden. Diese Elemente werden von der Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland angeboten.</p>
                 <p>Wenn das Social-Media-Element aktiv ist, wird eine direkte Verbindung zwischen Ihrem Endgerät und dem Facebook-Server hergestellt. Facebook erhält dadurch die Information, dass Sie mit Ihrer IP-Adresse diese Website besucht haben. Wenn Sie den Facebook-Button anklicken, während Sie in Ihrem Facebook-Account eingeloggt sind, können Sie die Inhalte dieser Website mit Ihrem Facebook-Profil verlinken. Dadurch kann Facebook den Besuch dieser Website Ihrem Benutzerkonto zuordnen.</p>
-                <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Facebook: <a href="https://de-de.facebook.com/privacy/explanation" target="_blank">https://de-de.facebook.com/privacy/explanation</a>.</p>
+                <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch Facebook erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Facebook: <a href="https://de-de.facebook.com/privacy/explanation" target="_blank" rel="noopener noreferrer">https://de-de.facebook.com/privacy/explanation</a>.</p>
 
                 <h2>5. WhatsApp</h2>
                 <p>Wir bieten auf unserer Website die Möglichkeit, uns über WhatsApp zu kontaktieren. Bei Nutzung dieses Dienstes werden Ihre Daten an die WhatsApp Inc. übermittelt. WhatsApp ist ein Dienst der Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.</p>
                 <p>Wenn Sie den WhatsApp-Button nutzen, wird eine direkte Verbindung zu den WhatsApp-Servern hergestellt. WhatsApp erhält dabei die Information, dass Sie unsere Website besucht haben. Wenn Sie WhatsApp nutzen, während Sie in Ihrem WhatsApp-Account eingeloggt sind, können Sie uns direkt kontaktieren.</p>
-                <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch WhatsApp erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von WhatsApp: <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank">https://www.whatsapp.com/legal/privacy-policy</a>.</p>
+                <p>Wir weisen darauf hin, dass wir als Anbieter der Seiten keine Kenntnis vom Inhalt der übermittelten Daten sowie deren Nutzung durch WhatsApp erhalten. Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von WhatsApp: <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://www.whatsapp.com/legal/privacy-policy</a>.</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
-        <ul>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="agb.html">AGB</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-        </ul>
-        <p class="footer-disclosure">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
-        <p class="footer-watermark">Made by Zara Sheikhi</p>
+    <footer class="bg-ink py-10 text-white">
+        <div class="page-shell grid gap-8 lg:grid-cols-[1fr_auto_1.25fr] lg:items-center">
+            <p class="text-sm">&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
+            <ul class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                <li><a class="transition hover:text-aqua" href="faq.html">FAQ</a></li>
+                <li><a class="transition hover:text-aqua" href="impressum.html">Impressum</a></li>
+                <li><a class="transition hover:text-aqua" href="agb.html">AGB</a></li>
+                <li><a class="transition hover:text-aqua" href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+            <div class="lg:text-right">
+                <p class="text-xs leading-5 text-white/70">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
+                <div class="mt-4 flex items-center gap-3 lg:justify-end">
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <span class="ml-2 text-xs text-white/60">Made by Zara Sheikhi</span>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
-    
-    <!-- WhatsApp Kontakt Button -->
-    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <!-- Cookie Banner -->
-    <div id="cookie-banner" class="cookie-banner">
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-Einstellungen" aria-hidden="true">
         <div class="cookie-content">
             <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
             <div class="cookie-buttons">
-                <button id="accept-cookies" class="cookie-button accept">Akzeptieren</button>
-                <button id="decline-cookies" class="cookie-button decline">Ablehnen</button>
+                <button id="accept-cookies" class="cookie-button accept" type="button">Akzeptieren</button>
+                <button id="decline-cookies" class="cookie-button decline" type="button">Ablehnen</button>
             </div>
         </div>
     </div>
+
+    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Termin über WhatsApp anfragen">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

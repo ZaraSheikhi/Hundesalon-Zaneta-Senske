@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b3340">
     <title>Leistungen & Preise Hundesalon Bremen-Nord | Zaneta Senske</title>
     <meta name="description" content="Leistungen und Preise für Hundepflege in Bremen-Nord, Rekum: Schneiden, Scheren, Trimmen, Carding und individuelle Fellpflege.">
     <meta property="og:title" content="Leistungen & Preise Hundesalon Bremen-Nord | Zaneta Senske">
@@ -19,126 +20,169 @@
     <link rel="canonical" href="https://hundesalon-zanetasenske.de/leistungen.html">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="bilder/logo-simple.png" alt="Hundesalon Zaneta Senske Logo">
-                </a>
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
+    <a href="#hauptinhalt" class="fixed left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-ink px-4 py-3 font-bold text-white transition focus:translate-y-0">
+        Zum Hauptinhalt
+    </a>
+
+    <header class="sticky top-0 z-40 border-b border-line/80 bg-white/95 backdrop-blur">
+        <nav class="page-shell relative flex min-h-24 items-center justify-between gap-5" aria-label="Hauptnavigation">
+            <a href="index.html" class="shrink-0 rounded-lg" aria-label="Hundesalon Zaneta Senske – Startseite">
+                <picture>
+                    <source type="image/webp" srcset="bilder/webp/logo-simple-400.webp">
+                    <img class="h-20 w-20 object-contain sm:h-[5.5rem] sm:w-[5.5rem]" src="bilder/logo-simple.png" alt="" width="400" height="400">
+                </picture>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="leistungen.html" aria-current="page">Leistungen</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/">Shop-Tiernahrung</a></li>
+                <li><a href="https://hundepflegezanetasenske.xantara-partner.de/" target="_blank" rel="sponsored noopener noreferrer">Shop-Tiernahrung</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <div class="social-links">
-                <a href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
+
+            <div class="hidden shrink-0 items-center gap-2 lg:flex">
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-facebook"></i>
+                <a class="flex h-11 w-11 items-center justify-center rounded-full text-xl text-ink transition hover:bg-aqua-soft hover:text-aqua-strong" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
                 </a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="services">
-            <h1>Leistungen & Preise für Hundepflege in Bremen-Nord</h1>
-            <p>Im Hundesalon Zaneta Senske in Bremen-Rekum erhalten Sie professionelle Fellpflege für kleine bis sehr große Hunde. Dazu gehören Schneiden, Scheren, Trimmen, Carding und individuelle Pflege je nach Felltyp.</p>
-            <p>Wenn Sie Fragen zu Pflegeintervallen oder zum Ablauf haben, finden Sie Antworten in unseren <a href="faq.html">FAQ zur Hundepflege</a>. Für Termine und Beratung gelangen Sie direkt zur <a href="kontakt.html">Kontaktseite</a>.</p>
-
-            <!-- Preisliste als Kartenform -->
-            <h2>Fell Behandlung - Komplettpflege</h2>
-            <div class="price-cards">
-                <div class="price-card">
-                    <h3>Kleiner Hund</h3>
-                    <p>kleine Hunde bis 30cm<br><span class="price-card-desc">(z.B. Yorki, Malteser, Shih Tzu, Havaneser, Bolonka)</span></p>
-                    <div class="price-card-prices"><br><span>ab 85 €</span></div>
-                </div>
-                <div class="price-card">
-                    <h3>Mittlerer Hund</h3>
-                    <p>mittlere Hunde bis 45cm<br><span class="price-card-desc">(z.B. Spaniel, Sheltie, Havapoo, Tibet Terrier, Doodle)</span></p>
-                    <div class="price-card-prices"><br><span>ab 100 €</span></div>
-                </div>
-                <div class="price-card">
-                    <h3>Großer Hund</h3>
-                    <p>Hunde bis 60cm<br><span class="price-card-desc">(z.B. Goldi, Husky, Boarder Collie, Aussie, Doodle)</span></p>
-                    <div class="price-card-prices"><br><span>ab 120 €</span></div>
-                </div>
-                <div class="price-card">
-                    <h3>Riesiger Hund</h3>
-                    <p>Hunde ab 60cm<br><span class="price-card-desc">(z.B. Kangal, Leonberger, Neufundländer, Bernersennen)</span></p>
-                    <div class="price-card-prices"><br><span>ab 140 €</span></div>
+    <main id="hauptinhalt">
+        <section class="subpage-hero" aria-labelledby="services-title">
+            <div class="page-shell">
+                <h1 id="services-title" class="subpage-title">Leistungen & Preise für Hundepflege in Bremen-Nord</h1>
+                <div class="content-intro">
+                    <p>Im Hundesalon Zaneta Senske in Bremen-Rekum erhalten Sie professionelle Fellpflege für kleine bis sehr große Hunde. Dazu gehören Schneiden, Scheren, Trimmen, Carding und individuelle Pflege je nach Felltyp.</p>
+                    <p>Wenn Sie Fragen zu Pflegeintervallen oder zum Ablauf haben, finden Sie Antworten in unseren <a href="faq.html">FAQ zur Hundepflege</a>. Für Termine und Beratung gelangen Sie direkt zur <a href="kontakt.html">Kontaktseite</a>.</p>
                 </div>
             </div>
+        </section>
 
-            <h3>Extra Aufwand</h3>
-            <div class="price-table-wrapper">
-            <table class="price-table">
-                <thead>
-                    <tr>
-                        <th>Leistung</th>
-                        <th>klein<br><span class='size-desc'>(bis 30cm)</span></th>
-                        <th>mittel<br><span class='size-desc'>(bis 45cm)</span></th>
-                        <th>groß<br><span class='size-desc'>(bis 60cm)</span></th>
-                        <th>riesig<br><span class='size-desc'>(ab 60cm)</span></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Sehr dichte Unterwolle</td><td>11 €</td><td>16 €</td><td>23 €</td><td>33 €</td></tr>
-                    <tr><td>Locke aufbürsten</td><td>11 €</td><td>16 €</td><td>23 €</td><td>-</td></tr>
-                    <tr><td>Handschnitt statt Scheren</td><td>13 €</td><td>18 €</td><td>23 €</td><td>28 €</td></tr>
-                    <tr><td>Knoten</td><td>13 €</td><td>16 €</td><td>19 €</td><td>23 €</td></tr>
-                    <tr><td>Teilfilz</td><td>28 €</td><td>32 €</td><td>37 €</td><td>43 €</td></tr>
-                    <tr><td>Filz</td><td>43 €</td><td>53 €</td><td>63 €</td><td>73 €</td></tr>
-                </tbody>
-            </table>
-            </div>
+        <section class="bg-white py-10 sm:py-12 lg:py-14" aria-labelledby="complete-care-title">
+            <div class="page-shell">
+                <h2 id="complete-care-title" class="font-display text-4xl font-semibold tracking-[-0.025em] sm:text-5xl">Fell Behandlung - Komplettpflege</h2>
 
-            <div class="price-note">
-                <p>* Die ab-Preise richten sich an regelmäßig gepflegte, kooperative, Filz- und Parasitenfreie Hunde, sowie nach Fellzustand und Größe des Hundes. Andernfalls fällt extra Aufwand an.</p>
-                <p>** Extreme Felleigenschaften wie bei Bobtail, Puli oder Nackthund werden nur bei Sichtung besprochen.</p>
-                <p>Sie möchten einen Termin im Hundesalon in Bremen-Nord vereinbaren? Nutzen Sie unsere <a href="kontakt.html">Kontaktmöglichkeiten</a> oder lesen Sie vorab die <a href="faq.html">häufigen Fragen</a>.</p>
+                <div class="price-rail">
+                    <article class="price-tier">
+                        <h3>Kleiner Hund</h3>
+                        <p class="price-description">kleine Hunde bis 30cm<br><span>(z.B. Yorki, Malteser, Shih Tzu, Havaneser, Bolonka)</span></p>
+                        <p class="price-value"><small>ab</small> 85 €</p>
+                    </article>
+                    <article class="price-tier">
+                        <h3>Mittlerer Hund</h3>
+                        <p class="price-description">mittlere Hunde bis 45cm<br><span>(z.B. Spaniel, Sheltie, Havapoo, Tibet Terrier, Doodle)</span></p>
+                        <p class="price-value"><small>ab</small> 100 €</p>
+                    </article>
+                    <article class="price-tier">
+                        <h3>Große Hunde</h3>
+                        <p class="price-description">Hunde bis 60cm<br><span>(z.B. Goldi, Husky, Boarder Collie, Aussie, Doodle)</span></p>
+                        <p class="price-value"><small>ab</small> 140 €</p>
+                    </article>
+                    <article class="price-tier">
+                        <h3>Riesige Hunde</h3>
+                        <p class="price-description">Hunde über 60cm<br><span>(z.B. Kangal, Leonberger, Neufundländer, Bernersennen)</span></p>
+                        <p class="price-value"><small>ab</small> 180 €</p>
+                    </article>
+                </div>
+
+                <section class="mt-16" aria-labelledby="extra-care-title">
+                    <h2 id="extra-care-title" class="font-display text-3xl font-semibold tracking-[-0.02em] sm:text-4xl">Extra Aufwand</h2>
+                    <div class="price-table-wrap overflow-x-auto" role="region" aria-labelledby="extra-care-title" tabindex="0">
+                        <table class="price-table">
+                            <caption class="sr-only">Extra Aufwand</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Leistung</th>
+                                    <th scope="col">klein<br><span class="size-desc">(bis 30cm)</span></th>
+                                    <th scope="col">mittel<br><span class="size-desc">(bis 45cm)</span></th>
+                                    <th scope="col">groß<br><span class="size-desc">(bis 60cm)</span></th>
+                                    <th scope="col">riesig<br><span class="size-desc">(über 60cm)</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">Sehr dichte Unterwolle</th><td>11 €</td><td>16 €</td><td>23 €</td><td>33 €</td></tr>
+                                <tr><th scope="row">Locke aufbürsten</th><td>11 €</td><td>16 €</td><td>23 €</td><td>-</td></tr>
+                                <tr><th scope="row">Handschnitt statt Scheren</th><td>13 €</td><td>18 €</td><td>23 €</td><td>28 €</td></tr>
+                                <tr><th scope="row">Knoten</th><td>13 €</td><td>16 €</td><td>19 €</td><td>23 €</td></tr>
+                                <tr><th scope="row">Teilfilz</th><td>28 €</td><td>32 €</td><td>37 €</td><td>43 €</td></tr>
+                                <tr><th scope="row">Filz</th><td>43 €</td><td>53 €</td><td>63 €</td><td>73 €</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <div class="note-panel">
+                    <p>* Die ab-Preise richten sich an regelmäßig gepflegte, kooperative, Filz- und Parasitenfreie Hunde, sowie nach Fellzustand und Größe des Hundes. Andernfalls fällt extra Aufwand an.</p>
+                    <p>** Extreme Felleigenschaften wie bei Bobtail, Puli oder Nackthund werden nur bei Sichtung besprochen.</p>
+                    <p class="flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+                        <span>Sie möchten einen Termin im Hundesalon in Bremen-Nord vereinbaren? Nutzen Sie unsere</span>
+                        <a href="kontakt.html" class="button-primary">Kontaktmöglichkeiten</a>
+                        <span>oder lesen Sie vorab die <a href="faq.html">häufigen Fragen</a>.</span>
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
-        <ul>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="agb.html">AGB</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
-        </ul>
-        <p class="footer-disclosure">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
-        <p class="footer-watermark">Made by Zara Sheikhi</p>
+    <footer class="bg-ink py-10 text-white">
+        <div class="page-shell grid gap-8 lg:grid-cols-[1fr_auto_1.25fr] lg:items-center">
+            <p class="text-sm">&copy; <span class="current-year">2026</span> Hundesalon Zaneta Senske</p>
+            <ul class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                <li><a class="transition hover:text-aqua" href="faq.html">FAQ</a></li>
+                <li><a class="transition hover:text-aqua" href="impressum.html">Impressum</a></li>
+                <li><a class="transition hover:text-aqua" href="agb.html">AGB</a></li>
+                <li><a class="transition hover:text-aqua" href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+            <div class="lg:text-right">
+                <p class="text-xs leading-5 text-white/70">* Bei einem Einkauf über den Shop-Link kann eine Provision anfallen; für Sie entstehen keine zusätzlichen Kosten.</p>
+                <div class="mt-4 flex items-center gap-3 lg:justify-end">
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.instagram.com/zanetasenske.groomer/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-lg transition hover:border-aqua hover:text-aqua" href="https://www.facebook.com/share/1ESmhfmwkS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook öffnen">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <span class="ml-2 text-xs text-white/60">Made by Zara Sheikhi</span>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
 
-    <!-- Cookie Banner -->
-    <div id="cookie-banner" class="cookie-banner">
+    <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-Einstellungen" aria-hidden="true">
         <div class="cookie-content">
             <p>Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Durch die Nutzung unserer Website stimmen Sie der Verwendung von Cookies zu.</p>
             <div class="cookie-buttons">
-                <button id="accept-cookies" class="cookie-button accept">Akzeptieren</button>
-                <button id="decline-cookies" class="cookie-button decline">Ablehnen</button>
+                <button id="accept-cookies" class="cookie-button accept" type="button">Akzeptieren</button>
+                <button id="decline-cookies" class="cookie-button decline" type="button">Ablehnen</button>
             </div>
         </div>
     </div>
+
+    <a href="https://wa.me/4915901076038" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Termin über WhatsApp anfragen">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
