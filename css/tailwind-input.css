@@ -282,6 +282,54 @@
     @apply absolute left-0 top-[0.6rem] h-2.5 w-2.5 rounded-full bg-apricot;
   }
 
+  .news-card {
+    @apply grid scroll-mt-28 overflow-hidden rounded-2xl border border-apricot bg-apricot-soft shadow-soft lg:grid-cols-[0.8fr_1.2fr];
+  }
+
+  .news-media {
+    @apply aspect-[4/3] lg:aspect-auto;
+  }
+
+  .news-media img {
+    @apply h-full w-full object-cover object-top;
+  }
+
+  .news-content {
+    @apply px-5 py-8 sm:px-8 lg:px-10 lg:py-10;
+  }
+
+  .news-badge {
+    @apply rounded-full bg-aqua-strong px-3 py-1 text-xs font-extrabold uppercase tracking-[0.14em] text-white;
+  }
+
+  .news-badge--lang {
+    @apply bg-white text-aqua-strong ring-1 ring-aqua-strong;
+  }
+
+  .news-facts {
+    @apply mt-6 grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2;
+  }
+
+  .news-facts > div {
+    @apply bg-white px-4 py-3;
+  }
+
+  .news-facts dt {
+    @apply text-xs font-extrabold uppercase tracking-[0.14em] text-ink-soft;
+  }
+
+  .news-facts dd {
+    @apply mt-1 font-bold text-ink;
+  }
+
+  .news-price {
+    @apply font-display text-2xl text-[#b64f00];
+  }
+
+  .news-lang-note {
+    @apply mt-6 rounded-xl border border-aqua bg-aqua-soft px-4 py-3 text-sm leading-6 text-ink-soft;
+  }
+
   .note-panel {
     @apply mt-8 space-y-3 rounded-2xl border border-aqua bg-aqua-soft px-5 py-6 text-sm leading-7 text-ink-soft sm:px-7;
   }
