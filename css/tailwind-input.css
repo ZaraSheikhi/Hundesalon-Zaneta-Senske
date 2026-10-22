@@ -257,6 +257,31 @@
     @apply text-xs font-medium text-ink-soft;
   }
 
+  .puppy-package {
+    @apply mt-16 grid scroll-mt-28 gap-8 rounded-2xl border border-apricot bg-apricot-soft px-5 py-8 shadow-soft sm:px-8 lg:grid-cols-[1fr_1.5fr] lg:gap-12 lg:px-10 lg:py-10;
+  }
+
+  .puppy-eyebrow {
+    @apply mb-3 text-xs font-extrabold uppercase tracking-[0.18em] text-aqua-strong;
+  }
+
+  .puppy-price {
+    @apply mt-6 font-display text-5xl font-semibold text-[#b64f00];
+  }
+
+  .puppy-list {
+    @apply space-y-3 self-center text-base leading-7 text-ink;
+  }
+
+  .puppy-list li {
+    @apply relative pl-7;
+  }
+
+  .puppy-list li::before {
+    content: "";
+    @apply absolute left-0 top-[0.6rem] h-2.5 w-2.5 rounded-full bg-apricot;
+  }
+
   .note-panel {
     @apply mt-8 space-y-3 rounded-2xl border border-aqua bg-aqua-soft px-5 py-6 text-sm leading-7 text-ink-soft sm:px-7;
   }
